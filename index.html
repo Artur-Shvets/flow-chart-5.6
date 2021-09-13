@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="block-styles.css">
+  <link rel="stylesheet" href="dark-light mode.css">
+  <link rel="stylesheet" href="menu-styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+  <title>FlowChart 5.6</title>
+</head>
+
+<body class='body'>
+  <div id="blur-space"></div>
+  <div id="svg-space" class="svg-space"></div>
+  <div id="work-space" class="work-space">
+    <!-- <div id="blur-space"></div> -->
+  </div>
+
+  <label class="switch">
+    <input type="checkbox" onclick="changeMode()">
+    <span class="slider round"></span>
+  </label>
+
+  <div id="parser-space">
+    <button class="btn-parse" onclick="parserCore()">Parse</button>
+    <div id="input" class="editor" contenteditable="true" autofocus></div>
+  </div>
+
+</body>
+
+<footer>
+  <script src="highlight parse.js"></script>
+  <script src="structure parse.js"></script>
+  <script src="dark light mode.js"></script>
+  <script src="flow chart.js"></script>
+  <script src="event core.js"></script>
+</footer>
+
+</html>
